@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rushguy-annotate_jd443"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别标注平台与数据质量工程师·算子融合的收益边界上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rushguy" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rushguy.github.io"
+Repository = "https://github.com/rushguy/annotate_jd443"
+Issues = "https://github.com/rushguy/annotate_jd443/issues"
+
+[project.scripts]
+annotate_jd443 = "annotate_jd443:main"
+
+[tool.setuptools]
+py-modules = ["annotate_jd443"]
